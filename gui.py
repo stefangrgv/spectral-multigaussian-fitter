@@ -41,6 +41,8 @@ def set_wavelength_window(wl):
     wl_max_entry.insert(0, '%f'%spectrum_wl_max)
     wl_max_entry.grid(row=1, column=1)
 
+    tk.Label(master=win, text='Note: consider a window of < 2 nm').grid(row=2, column=0)
+
     # handle the exit
     def close_window():
         win.quit()
