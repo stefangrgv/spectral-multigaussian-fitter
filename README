@@ -1,0 +1,12 @@
+1. After starting main.py, please select the file containing the spectrum or data series you are interested in. The file must be an 2-column ASCII table. The first column will hereafter be referred to as "wavelength" and the second - as "intensity", similar to the case of a stellar spectrum.
+    example : example_input.spect
+
+2. Select the limits of the wavelength window you want to study by typing the minimum and maximum wavelength. Note that this is necessary because most spectra are very large, containing tens of thousands of points, while usually at a given time we are only interested in a very narrow region of them.
+    example : min = 655.5, max = 657.5 (around the Hydrogen alpha line)
+
+3. From the displayed spectrum or data series, select the desired window you want to fit by first clicking on the "Select fit range" button and then drag-and-drop with the mouse on the spectrum.
+    example : the deep line in the middle, H-alpha
+
+4. Press the "Fit" button. The fit will be drawn with a green line. If you are satisfied with the fit, you can save it using the "Save fit" button. Otherwise, you may want to change the continuum level and/or the number of gaussians used for the fit, by typing the desired value(s) in the corresponding box(es). Note that if more than 1 gaussian is being used, the individual gaussian fits will be drawn in red, while their sum will be again in green.
+
+5. If you want to further constrain the parameters of the gaussians used for the fit, you can do so by clicking on the "Set limits" button. A graphical interface will appear where you can limit the range of possible depths in intensity, peak positions in wavelength and half-widths-at-half-maximum (HWHM) of each of the gaussians.
